@@ -22,8 +22,7 @@ androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-
-<https://vimeo.com/861502383/b1e8509234?share=copy>
+https://vimeo.com/861502383/b1e8509234?share=copy
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
