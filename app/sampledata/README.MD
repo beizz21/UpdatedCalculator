@@ -23,11 +23,12 @@ androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
 Here's a walkthrough of implemented user stories:
 
-<img src='walkthrough.gif' title='Video Walkthrough' width='50%' alt='Video Walkthrough' />
+<https://vimeo.com/861502383/b1e8509234?share=copy>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
+I couldn't convert this to a gif because the gifs could only be 6 seconds long. 
 I found this to be way more difficult than I expected.
 
 ## License
