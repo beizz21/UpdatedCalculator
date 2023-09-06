@@ -6,8 +6,8 @@ In this project, I assembled a calculator app that works much like the calculato
 
 The following **required** functionality is completed:
 
-* [ ] User sees calculator
-* [ ] User can open the calculator and calculate
+* [ ] User sees calculator.
+* [ ] User can open the calculator and calculate.
 
 The following **extensions** are implemented:
 
