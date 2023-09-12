@@ -7,6 +7,12 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
+    buildTypes {
+        create("customDebugType") {
+            isDebuggable = true
+        }
+    }
 }
 
 android {

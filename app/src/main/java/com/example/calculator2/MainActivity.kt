@@ -82,6 +82,7 @@ class MainActivity : AppCompatActivity() {
         fun resetOperators() { //resets press state of operators for clear button or when another operator is pressed
             for (button in operatorIds) {
                 val buttonObj: Button = findViewById(button)
+                buttonObj.isPressed = false
             }
         }
 
@@ -92,22 +93,43 @@ class MainActivity : AppCompatActivity() {
 
 
             numberButton.setOnClickListener {
-                val clickedNumber = resources.getResourceEntryName(buttonId)
-                    .removeSuffix("Button")
+                val clickedNumber = resources.getResourceEntryName(buttonId).removeSuffix("Button")
 
-                val stringValue = when (clickedNumber) { //convert to number format ("zero" -> "0")
-                    "zero" -> "0"
-                    "one" -> "1"
-                    "two" -> "2"
-                    "three" -> "3"
-                    "four" -> "4"
-                    "five" -> "5"
-                    "six" -> "6"
-                    "seven" -> "7"
-                    "eight" -> "8"
-                    "nine" -> "9"
-                    else -> throw IllegalArgumentException("Incorrect String")
+
+                var stringValue = "0"
+
+                if (clickedNumber == "button_1") {
+                    stringValue = "1"
                 }
+                if (clickedNumber == "button_2") {
+                    stringValue = "2"
+                }
+                if (clickedNumber == "button_3") {
+                    stringValue = "3"
+                }
+                if (clickedNumber == "button_4") {
+                    stringValue = "4"
+                }
+                if (clickedNumber == "button_5") {
+                    stringValue = "5"
+                }
+                if (clickedNumber == "button_6") {
+                    stringValue = "6"
+                }
+                if (clickedNumber == "button_7") {
+                    stringValue = "7"
+                }
+                if (clickedNumber == "button_8") {
+                    stringValue = "8"
+                }
+                if (clickedNumber == "button_9") {
+                    stringValue = "9"
+                }
+                if (clickedNumber == "button_0") {
+                    stringValue = "0"
+                }
+
+
 
                 if (equalsPressed) {
 
@@ -163,6 +185,7 @@ class MainActivity : AppCompatActivity() {
             operatorPressed = false
             equalsPressed = false
             displayText.text = starting_input
+            resetOperators()
         }
 
         //decimal button
