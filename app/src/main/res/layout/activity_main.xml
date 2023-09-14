@@ -4,20 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/verticalLayout"
     android:orientation="vertical"
     android:background="@color/white"
     tools:context=".MainActivity">
 
-
-    <Button
-        android:id="@+id/rotateButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:text="Rotate"
-        android:onClick="toggleOrientation"
-        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,6 +17,7 @@
         android:gravity="bottom"
         android:orientation="vertical"
         android:padding="30dp">
+
 
         <TextView
             android:id="@+id/input"
@@ -54,6 +46,7 @@
         android:stretchColumns="*">
 
         <TableRow>
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button_clear"
                 android:layout_marginEnd="2dp"
@@ -96,20 +89,6 @@
                 android:layout_height="90dp"
                 style="@style/Button_Style"
                 android:text="/" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button_sin"
-                style="@style/Button_Style"
-                android:layout_width="wrap_content"
-                android:layout_height="90dp"
-                android:layout_marginLeft="2dp"
-                android:textSize="30sp"
-                android:layout_marginTop="2dp"
-                android:textColor="@color/white"
-                android:background="@color/purple"
-                android:textAllCaps="false"
-                android:text="sin"
-                android:visibility="visible" />
 
         </TableRow>
 
@@ -162,20 +141,6 @@
                 style="@style/Button_Style"
                 android:text="X" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button_cos"
-                style="@style/Button_Style"
-                android:layout_width="wrap_content"
-                android:layout_height="90dp"
-                android:layout_marginLeft="2dp"
-                android:textSize="30sp"
-                android:layout_marginTop="2dp"
-                android:textColor="@color/white"
-                android:background="@color/purple"
-                android:textAllCaps="false"
-                android:text="cos"
-                android:visibility="visible" />
-
         </TableRow>
 
         <TableRow>
@@ -225,20 +190,6 @@
                 android:background="@color/purple"
                 style="@style/Button_Style"
                 android:text="-" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button_tan"
-                style="@style/Button_Style"
-                android:layout_width="wrap_content"
-                android:layout_height="90dp"
-                android:layout_marginLeft="2dp"
-                android:textSize="30sp"
-                android:layout_marginTop="2dp"
-                android:textColor="@color/white"
-                android:background="@color/purple"
-                android:textAllCaps="false"
-                android:text="tan"
-                android:visibility="visible" />
 
         </TableRow>
 
@@ -290,47 +241,34 @@
                 style="@style/Button_Style"
                 android:text="+" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button_log"
-                style="@style/Button_Style"
-                android:layout_width="wrap_content"
-                android:layout_height="90dp"
-                android:layout_marginLeft="2dp"
-                android:textSize="30sp"
-                android:layout_marginTop="2dp"
-                android:textColor="@color/white"
-                android:background="@color/purple"
-                android:textAllCaps="false"
-                android:text="Log 10"
-                android:visibility="visible" />
-
         </TableRow>
 
-        <TableRow>
+        <TableRow android:orientation="vertical">
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button_0"
-                android:layout_marginTop="2dp"
-                android:layout_width="wrap_content"
-                android:textSize="30sp"
-                android:textColor="@color/white"
-                android:background="@color/purple"
-                android:layout_height="90dp"
-                android:layout_weight="1"
                 style="@style/Button_Style"
-                android:text="0" />
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@color/purple"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
 
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button_dot"
-                android:layout_marginTop="2dp"
-                android:layout_marginLeft="2dp"
-                android:background="@color/purple"
-                android:textColor="@color/white"
-                android:textSize="30sp"
+                style="@style/Button_Style"
                 android:layout_width="wrap_content"
                 android:layout_height="90dp"
-                style="@style/Button_Style"
-                android:text="." />
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/purple"
+                android:text="."
+                android:textColor="@color/white"
+                android:textSize="30sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button_equals"
@@ -338,27 +276,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="90dp"
                 android:layout_marginLeft="2dp"
-                android:textSize="30sp"
                 android:layout_marginTop="2dp"
-                android:textColor="@color/white"
                 android:background="@color/purple"
                 android:text="="
-                android:visibility="visible" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button_ln"
-                style="@style/Button_Style"
-                android:layout_width="wrap_content"
-                android:layout_height="90dp"
-                android:layout_marginLeft="2dp"
-                android:textSize="30sp"
-                android:layout_marginTop="2dp"
                 android:textColor="@color/white"
-                android:background="@color/purple"
-                android:textAllCaps="false"
-                android:text="ln"
+                android:textSize="30sp"
                 android:visibility="visible" />
-
         </TableRow>
 
     </TableLayout>
